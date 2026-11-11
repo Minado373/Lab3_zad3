@@ -8,7 +8,16 @@
   </head>
   <body>
     <main class="home">
-      <button class="button" id="randomGifButton">Losowy Gif</button>
+      <div class="menu">
+        <button class="button" id="randomGifButton">Losowy Gif</button>
+        <form class="form">
+          <label>
+            Wyszukaj po frazie:
+            <input type="text" placeholder="Wpisz..." id="phraseInput" />
+          </label>
+          <button id="searchButton" type="submit" class="button">Szukaj</button>
+        </form>
+      </div>
       <div class="gif_container">
         <img id="gif" class="gif" />
       </div>
