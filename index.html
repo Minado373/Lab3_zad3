@@ -17,11 +17,24 @@
           </label>
           <button id="searchButton" type="submit" class="button">Szukaj</button>
         </form>
+        <button id="trendingButton" class="button">
+          Pobierz <span id="pageNumber">1</span> stronę Gifów
+        </button>
       </div>
       <div class="gif_container">
         <img id="gif" class="gif" />
       </div>
+      <div class="gifs_container">
+        <img class="gif" />
+        <img class="gif" />
+        <img class="gif" />
+        <img class="gif" />
+        <img class="gif" />
+      </div>
     </main>
+    <div class="loader" id="loader">
+      <p>Loading...</p>
+    </div>
     <script src="./app.js"></script>
   </body>
 </html>

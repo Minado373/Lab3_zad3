@@ -55,3 +55,35 @@ html {
 .button:hover {
   background-color: beige;
 }
+
+.gifs_container {
+  display: flex;
+  gap: 2rem;
+}
+
+.gifs_container > img {
+  width: 200px;
+  height: 200px;
+}
+
+.loader {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 60px;
+  font-weight: bold;
+  background-color: cyan;
+  padding: 30px;
+}
+
+.gifs_container img {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.gif.hidden {
+  opacity: 0;
+}
